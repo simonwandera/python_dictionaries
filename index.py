@@ -6,10 +6,12 @@ class Dict:
     def __init__(self, my_dict):
         self.my_dict = my_dict
 
+    #get the dict keys
     def getKeys(self):
         keys = [key for key, value in self.my_dict.items()]
         return keys
 
+    #get the dict values
     def getValues(self):
         values = [value for key, value in self.my_dict.items()]
         return values
