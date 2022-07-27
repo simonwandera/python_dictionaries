@@ -15,9 +15,18 @@ class Dict:
     def getValues(self):
         values = [value for key, value in self.my_dict.items()]
         return values
+
+    def getFormattedItems(self):
+        data = ''
+        for key, value in self.my_dict.items():
+            data = data + f'{key} > {value}    \n'
+
+        return data
     
 
 data = {'name': 'Simon', 'gender':'Male', 'residence':'Busia'}
 
 my_dictionary = Dict(data)
 print(my_dictionary.getValues())
+print(my_dictionary.getKeys())
+print(my_dictionary.getFormattedItems())
